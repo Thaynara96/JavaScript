@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        /* escopo global - é o escopo do script como  um todo
+           escopo da função - corresponde ao conteudo inserido dentro de um bloco de função
+           escopo de bloco - são as funções contidas dentro de comandos, ex: if, switch
+        */
+
+        var serie = 'Friends'
+
+        if (true) {
+            var serie2 = 'Games of Thrones'
+            document.write (serie)
+        }
+
+        document.write (serie2)
+        document.write ('<br/>')
+
+        function x(){
+            var serie3 = 'The Walking Dead'
+            document.write (serie)
+            document.write (serie2)
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
